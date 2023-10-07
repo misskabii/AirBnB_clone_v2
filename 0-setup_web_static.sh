@@ -9,21 +9,13 @@ mkdir -p /data/web_static/shared/
 echo "Holberton School" > /data/web_static/releases/test/index.html
 ln -sf /data/web_static/releases/test/ /data/web_static/current
 
-<<<<<<< HEAD
 chown -R ubuntu /data/
 chgrp -R ubuntu /data/
-=======
-chown -R ubuntu:ubuntu /data/  # Set both owner and group to ubuntu
->>>>>>> df7b5d4f9bcb36151671070a44919298ccea2033
 
 printf %s "server {
     listen 80 default_server;
     listen [::]:80 default_server;
-<<<<<<< HEAD
     add_header X-Served-By $HOSTNAME;
-=======
-    add_header X-Served-By \$HOSTNAME;
->>>>>>> df7b5d4f9bcb36151671070a44919298ccea2033
     root   /var/www/html;
     index  index.html index.htm;
 
